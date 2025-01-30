@@ -1,48 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Hawk Tuah</title>
-<style>
-div {
-  height: 100px
-  background-color:lightblue;
-}
+  <title>Hawk Tuah</title>
+  <style>
+  div {
+    height: 100px
+    background-color:lightblue;
+  }
 
-btn {
-  height: 100px;
-  background-color: green;
-  text-align: center;
-  cursor: pointer;
-  border: none
-}
-</style>
-<div style = "background-color:lightblue;">
-  <h2 style = "color:black; text-align: center;">yippeeee</h2>
-  <p style = "color:red;text-align: center;">this website is so cool.</p>
-  <p style = "color:green;text-align: center;">sabir you SUCK!!!!!.</p>
-</div>
+  button {
+    height: 50px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    margin: 10px;
+    padding: 10px 20px;
+  }
+  </style>
+  
 
 </head>
 <body>
-<button style = "background-color: green;" type="btn" onclick="toggleDisplay()">Click Me!</button>
-
-<script>
-let isVisible = false;
-
-function toggleDisplay() {
-    const demo = document.getElementById('demo');
-    if (isVisible) {
-        demo.style.display = 'none';
-    } else {
-        demo.style.display = 'block';
-    }
-    isVisible = !isVisible;
-}
-</script>
-
-<form action="https://google.com">
+  <div style = "background-color:lightblue;">
+    <h2 style = "color:black; text-align: center;">yippeeee</h2>
+    <p style = "color:red;text-align: center;">this website is so cool.</p>
+    <p style = "color:green;text-align: center;">sabir you SUCK!!!!!.</p>
+  </div>
+  <button type="button" onclick="toggleDisplay()">Click Me!</button>
+  <form action="https://google.com">
     <input type="submit" value="Go to Google" />
-</form>
+  </form>
+
+
+
   
 <h1 style = "color:black;">Talk Tuah</h1>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1agk_MfSoQM?si=xiG4ZPm3yGkJekKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -57,6 +50,21 @@ function toggleDisplay() {
 </div>
 
 <button type="btn" onclick="action()">don't click on me</button>
+
+  <script>
+    let isVisible = false;
+
+    function toggleDisplay() {
+    const demo = document.getElementById('demo');
+    if (isVisible) {
+        demo.style.display = 'none';
+    } else {
+        demo.style.display = 'block';
+    }
+    isVisible = !isVisible;
+}
+</script>
+
 
 </body>
 
