@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, intial-scale1">
+    <title>Countdown to Graduation for the Class of 2028</title>. 
+    <style>
+	    p {
+		    text-align: center;
+		    font-size: 60px;
+		    margin-top: Opx;
+    </style>
+  </head>
+  <body>
+  <p id="grad"></p>
+  <script>
+    	var countDownDate = new Date("Jun 20, 2028, 12:00:00").getTime():
+    	var x = setInterval(function() {
+    	var distance countDownDate - now;
+		
+    	var days = Math.floor(distance/(1000*60*60*24));
+	var hours = Math.floor(distance/(1000*60*60*24))/(1000 * 60 * 60);
+	var minutes = Math.floor(distance/(1000*60*60))/(1000 * 60)
+	var seconds = Math.floor(distance/(1000*60))/1000
+
+	document.getElementById("grad").innerHTML = "It is" + days + "days " + hours + "hours " + minutes + "minutes "
+ + seconds + "seconds " + "until High School graduation for the class of 2028 from MIS!";
+
+
+	if (distance < 0) {
+		clearInterval(x);
+		document.getElementById("grad").innerHTML = "ConGRADulations class of 2028"	
+	}
+	}, 1000):
+</script>
+</body>
+</html>
